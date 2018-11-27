@@ -1,3 +1,3 @@
 # efgodward.github.io
 
-This is my repo for General Assembly Front End Web Development Course.
+This is my repo for General Assembly's Front End Web Development Course.
