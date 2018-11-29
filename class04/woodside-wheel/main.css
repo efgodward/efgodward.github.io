@@ -1,1 +1,61 @@
+body {
+    max-width: 720px;
+    padding: 54px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
 
+h1 {
+    color: #e2231a;
+    font-weight: lighter;
+    font-size:28pt;
+
+}
+
+h2 {
+    font-weight: lighter;
+    font-size:14pt;
+}
+
+nav {
+    color: #dddddd;
+}
+
+h3 {
+    color: black;
+    font-weight: lighter;
+}
+
+h4 {
+    color: #bbbbbb
+}
+
+img {
+    margin: 0 auto;
+    width: 75%;
+    display: block;
+}
+
+hr {
+    background: lightgrey;
+}
+
+a {
+    color: #e2231a;
+}
+
+a:hover {
+    color: #aa0000;
+}
+
+.dates {
+    color: #cccccc;
+    font-size:16pt;
+    font-weight: lighter;
+}
+
+footer {
+    color: red;
+
+}
