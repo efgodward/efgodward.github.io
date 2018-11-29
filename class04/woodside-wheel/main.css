@@ -13,11 +13,13 @@ h1 {
     color: #e2231a;
     font-weight: lighter;
     font-size: 28pt;
+    margin-top: 50px;
 }
 
 h2 {
     font-weight: lighter;
     font-size: 14pt;
+    margin-top: -20px;
 }
 
 h3 {
@@ -25,11 +27,18 @@ h3 {
     font-weight: lighter;
     font-size: 25px;
     margin-top: 0px;
+    margin-bottom: 10px;
+    
 }
 
 h4 {
     color: #bbbbbb;
     font-weight: lighter;
+    font-size: 14px;
+    margin-top: 10px;
+}
+p {
+    color: #42403F;
 }
 
 img {
@@ -39,11 +48,19 @@ img {
 }
 
 hr {
-    border-color: #dddddd;
+    height: 1.5px;
+    color: #dddddd;
+    background-color: #dddddd;
+    border: none;
 }
 
+nav {
+    margin-top: -10px;
+}
 .navlink {
     color: #dddddd;
+    padding-right: 10px;
+    
 }
 
 .navlink:hover {
@@ -57,8 +74,14 @@ hr {
     margin-top: 30px;
 }
 
+footer {
+    margin-top: 35px;
+}
+
 .link {
     color: #e2231a;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .link:hover {
@@ -78,7 +101,7 @@ hr {
 .vertical {
     border-left: 4px solid #e2231a;
     margin-left: 0px;
-    margin-top: -90px;
+    margin-top: -100px;
     margin-bottom: -150px;
     margin-left: -40px;
     padding-left: 40px;
