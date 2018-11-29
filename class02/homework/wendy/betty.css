@@ -1,0 +1,32 @@
+body {
+	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    color: silver;
+}
+
+a {
+    color: #33CC99;
+}
+
+ul {
+    list-style-type: square;
+  }
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}

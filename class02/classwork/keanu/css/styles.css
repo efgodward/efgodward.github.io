@@ -1,0 +1,22 @@
+body {
+	background: black;
+	color: white;
+	text-align: center;
+	font-family: monospace;
+}
+a {
+	color: lavenderblush;
+	text-decoration: none;
+	font-size: 20PX;
+	text-decoration: OVERLINE;
+	
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+}
+
+h1 {
+	font-size: 60PX;
+}

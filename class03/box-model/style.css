@@ -1,0 +1,56 @@
+body {
+  font-family: 'Space Mono', monospace;
+  background: lightgrey;
+  font-size: 16px;
+}
+
+h1 {
+  background: #333;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 20px;
+}
+
+.yellow {
+  background: #f1c40f;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 9px;
+  padding: 12px;
+}
+
+.orange {
+  background: #e67e22;
+  text-align: center;
+  margin-top: 9px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 5px;
+  padding: 12px;
+}
+
+.red {
+  background: #e74c3c;
+  text-align: center;
+  margin-top: 9px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 12px;
+}
+
+/* 
+body background lightgrey;
+header background, lorem text #333
+lorem-1 background #f1c40f
+lorem-2 background #e67e22
+lorem-3 background #e74c3c */
