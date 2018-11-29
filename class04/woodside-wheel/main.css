@@ -5,6 +5,8 @@ body {
     text-align: left;
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
+    height: 100%;
+    min-height: 100%
 }
 
 h1 {
@@ -22,6 +24,7 @@ h3 {
     color: black;
     font-weight: lighter;
     font-size: 25px;
+    margin-top: 0px;
 }
 
 h4 {
@@ -36,7 +39,7 @@ img {
 }
 
 hr {
-    background: lightgrey;
+    border-color: #dddddd;
 }
 
 .navlink {
@@ -51,6 +54,7 @@ hr {
     color: #cccccc;
     font-size: 16pt;
     font-weight: lighter;
+    margin-top: 30px;
 }
 
 .link {
@@ -72,7 +76,11 @@ hr {
 }
 
 .vertical {
-    border-left: 3px solid red;
-    height: 100%;
-    padding-right: 20px;
+    border-left: 4px solid #e2231a;
+    margin-left: 0px;
+    margin-top: -90px;
+    margin-bottom: -150px;
+    margin-left: -40px;
+    padding-left: 40px;
+    border-radius: 2px;
 }
