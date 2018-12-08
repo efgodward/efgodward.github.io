@@ -92,7 +92,7 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 25px;
     border-radius: 3px;
     box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
@@ -109,13 +109,11 @@ h3 {
 
 .container {
     display: flex;
-    justify-content: space-between;
     padding: 25px;
     background: rgba(200, 200, 200, .4);
-}
-
-.pflex {
-
+    margin: 0;
+    /* justify-content: space-around; */
+    align-content: space-around;
 }
 
 .sign-up-button {
@@ -136,18 +134,18 @@ h3 {
 }
 
 .profile {
-    justify-content: space-evenly;
+    padding: 8px;
    
 }
 
 .developer {
-    justify-content: space-evenly;
     border-right: 1px solid #C6C6C6;
     border-left: 1px solid #C6C6C6;
+    padding: 6px;
 }
 
 .designer {
-    justify-content: space-evenly;
+    padding: 8px;
 }
 
 .search-start {
