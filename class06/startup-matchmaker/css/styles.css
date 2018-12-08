@@ -62,6 +62,8 @@ body {
 img {
     width: 800px;
     margin-bottom: -7;
+    object-fit: cover;
+    height: 325px;
 }
 
 .meetmatch {
@@ -112,7 +114,6 @@ h3 {
     padding: 25px;
     background: rgba(200, 200, 200, .4);
     margin: 0;
-    /* justify-content: space-around; */
     align-content: space-around;
 }
 
