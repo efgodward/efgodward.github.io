@@ -1,0 +1,174 @@
+/* FONT FAMILY HELPERS :)
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+header {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+h1 {
+    display: flex;
+    font-family: 'Merriweather', serif;
+    color: yellow;
+    justify-content: space-around;
+}
+
+a {
+    color: #C6C6C6;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.tagline {
+    font-family: 'Merriweather', serif;
+    background: #C6C6C6;
+    text-emphasis: bold;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    padding: 18px;
+}
+
+.taste {
+    color: darkgrey;
+    text-decoration: line-through;
+}
+
+.are {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+hr {
+    display: block;
+    border: 1.5px solid yellow;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("coworking.jpg");}
+
+
+img {
+    width: 800px;
+    margin-bottom: -7;
+}
+
+.meetmatch {
+    position: relative;
+}
+
+.textblock {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 275px;
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px darkgrey;
+}
+
+.create-profile {
+    background-color: yellow;
+    border: none;
+    width: 250px;
+    color: black;
+    text-emphasis: bold;
+    margin: 2px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background: rgba(200, 200, 200, .4);
+}
+
+.pflex {
+
+}
+
+.sign-up-button {
+    background-color: #C6C6C6;
+    border: none;
+    color: black;
+    text-emphasis: bold;
+    font-family: 'Oswald', sans-serif;
+    margin: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
+    align-items: flex-end;
+    border-radius: 3px;
+}
+
+.profile {
+    justify-content: space-evenly;
+   
+}
+
+.developer {
+    justify-content: space-evenly;
+    border-right: 1px solid #C6C6C6;
+    border-left: 1px solid #C6C6C6;
+}
+
+.designer {
+    justify-content: space-evenly;
+}
+
+.search-start {
+    background-color: #C6C6C6;
+    border: none;
+    color: black;
+    text-emphasis: bold;
+    font-family: 'Oswald', sans-serif;
+    margin: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
+    align-items: flex-end;
+    border-radius: 3px;
+}
+
+footer {
+    background: black;
+    color: #C6C6C6;
+    padding: 5px;
+}
