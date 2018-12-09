@@ -6,15 +6,16 @@ font-family: 'Source Sans Pro', sans-serif; */
 header {
     background: black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: baseline;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 h1 {
     display: flex;
     font-family: 'Merriweather', serif;
     color: yellow;
-    justify-content: space-around;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
     font-style: italic;
     font-size: 25px;
     text-align: center;
-    padding: 18px;
+    padding: 14px;
 }
 
 .taste {
@@ -56,14 +57,16 @@ body {
     width: 800px;
     margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url("coworking.jpg");}
-
+    background-image: url("coworking.jpg");
+}
 
 img {
-    width: 800px;
+    width: 798px;
     margin-bottom: -7;
     object-fit: cover;
     height: 325px;
+    border: 1px solid #C6C6C6;
+    box-shadow: 1.5px rgba(0, 0, 0, .4)
 }
 
 .meetmatch {
@@ -72,21 +75,22 @@ img {
 
 .textblock {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 275px;
+    bottom: 45px;
+    right: 30px;
+    width: 280px;
     background: rgba(255, 255, 255, 0.7);
     color: black;
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Source Sans Pro', sans-serif;
-    border: 1px darkgrey;
+    border: 1px solid #C6C6C6;
+    box-shadow: 1.5px rgba(0, 0, 0, .4)
 }
 
 .create-profile {
     background-color: yellow;
     border: none;
-    width: 250px;
+    width: 245px;
     color: black;
     text-emphasis: bold;
     margin: 2px;
@@ -96,8 +100,8 @@ img {
     display: inline-block;
     font-size: 16px;
     margin-bottom: 25px;
-    border-radius: 3px;
-    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;  
+    box-shadow: 0 1.5px 1.5px rgba(0,0,0, 0.4);
 }
 
 h2 {
@@ -129,14 +133,13 @@ h3 {
     text-decoration: none;
     display: block;
     font-size: 16px;
-    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.5px 1.5px rgba(0,0,0, 0.4);
     align-items: flex-end;
     border-radius: 3px;
 }
 
 .profile {
     padding: 8px;
-   
 }
 
 .developer {
@@ -161,7 +164,7 @@ h3 {
     text-decoration: none;
     display: block;
     font-size: 16px;
-    box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.5px 1.5px rgba(0,0,0, 0.4);
     align-items: flex-end;
     border-radius: 3px;
 }
