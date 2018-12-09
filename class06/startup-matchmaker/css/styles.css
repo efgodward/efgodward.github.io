@@ -76,7 +76,7 @@ body {
     box-shadow: 1.5px rgba(0, 0, 0, .4);
 }  */
 
-/* This is the formatting for getting the img insert in html correct...having difficulty with having it as a background porperty */
+/* This is the formatting for getting the img insert in html correct...having difficulty with having it as a background porperty. It visually looks correct on my screen but I'm not sure how it will hold up in differnt sized screens*/
 
 .meetmatch {
     position: relative;
@@ -86,7 +86,6 @@ body {
     position: absolute;
     right: 20px;
     top: 45px;
-    ;
     width: 280px;
     background: rgba(255, 255, 255, 0.7);
     color: black;
@@ -117,6 +116,8 @@ body {
 h2 {
     font-family: 'Merriweather', serif;
     font-size: 25px;
+    margin-bottom: -11px;
+    /* In my previous HW you mentioned that I should try changing another element's margin than doing a negative margin...what else would I change? Are there any ramifications to using a negative margin? */
 }
 
 h3 {
@@ -129,6 +130,7 @@ h3 {
     background: rgba(240, 240, 240);
     margin-top: 335px;
     align-content: space-around;
+    justify-content: space-evenly;
 }
 
 .sign-up-button {
@@ -137,7 +139,8 @@ h3 {
     color: black;
     text-emphasis: bold;
     font-family: 'Oswald', sans-serif;
-    margin: 10px;
+    margin: 0 auto;
+    width: 175px;
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
@@ -148,29 +151,33 @@ h3 {
     border-radius: 3px;
 }
 
+/* Was having trouble getting the text to line up vertically w/ the buttons here */
+
 .profile {
-    padding: 8px;
-    text-indent: 5px;
+    padding-right: 10px;
 }
 
 .developer {
     border-right: 1px solid #C6C6C6;
     border-left: 1px solid #C6C6C6;
-    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .designer {
-    padding: 8px;
+    padding-left: 10px;
 }
 
 .search-start {
+    position: relative;
     background-color: #C6C6C6;
     border: none;
     color: black;
     text-emphasis: bold;
     font-family: 'Oswald', sans-serif;
-    margin: 10px;
     padding: 5px 15px;
+    width: 175px;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -178,6 +185,12 @@ h3 {
     box-shadow: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
     align-items: flex-end;
     border-radius: 3px;
+}
+
+/* Question: Was playing around with a properties...why doesn't the following work? */
+
+.search-start.hover {
+    background: yellow;
 }
 
 footer {
