@@ -2,4 +2,5 @@ An option...
     1. website for the best hiking / trekkng trips to do in the world...something visually apealing 
        where there is a quiz or some interactive element that spits out a trip idea
 
-    2. 
+    2. Or create a "coming soon" page for a food related app...maybe something that notifies you of 
+       last minute restaurant reservation cancellations for top restaurants that are up for grabs
