@@ -4,22 +4,27 @@ let total = 0;
 $("#a10").click(addTen);
 $("#a20").click(addTwenty);
 $("#a30").click(addThirty);
+$("#red").click(colorRed);
+$("#blue").click(colorBlue);
+$("#out").click(reset);
+$("#n10").click(minusTen);
+$("#n20").click(minusTwenty);
+$("#n30").click(minusThirty);
 
 function addTen() {
   total = total + 10;
   $("#out").html(total);
 }
+
 function addTwenty() {
   total = total + 20;
   $("#out").html(total);
 }
+
 function addThirty() {
   total = total + 30;
   $("#out").html(total);
 }
-
-$("#red").click(colorRed);
-$("#blue").click(colorBlue);
 
 function colorRed() {
   $("#out").css("background-color", "red");
@@ -29,17 +34,11 @@ function colorBlue() {
   $("#out").css("background-color", "blue");
 }
 
-$("#out").click(reset);
-
 function reset() {
   total = 0;
   $("#out").html(total);
   $("#out").css("background-color", "white");
 }
-
-$("#n10").click(minusTen);
-$("#n20").click(minusTwenty);
-$("#n30").click(minusThirty);
 
 function minusTen() {
   total = total - 10;
