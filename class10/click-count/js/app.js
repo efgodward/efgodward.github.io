@@ -7,8 +7,20 @@
 // 5: Else if the number of clicks == 15, change the background-color of <body> to blue
 // 6: Else, change the background-color of <body> to black
 
-$(document).ready(function () {
-
-    $('#clickme').click(function()
-
-})
+$(document).ready(function() {
+  $("#clickme").click(clickCount);
+  let click = 0;
+  function clickCount() {
+    click = click + 1;
+    $("#click-num").html(click);
+  }
+  if (click === 5) {
+    $("body").css("background-color", "red");
+  } else if (click === 10) {
+    $("body").css("background-color", "green");
+  } else if (click === 15) {
+    $("body").css("background-color", "blue");
+  } else {
+    $("body").css("background-color", "black");
+  }
+});
