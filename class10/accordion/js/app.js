@@ -10,6 +10,6 @@
 
 $(".row").click(function(){
 
-    $(this).find('.wrapper').slideToggle("slow");
+    $(this).find('.wrapper').slideToggle(250);
 
 })
