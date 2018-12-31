@@ -11,25 +11,21 @@
 // function tempConvert() {
 //   let temperature = parseFloat($("#temp").val());
 //   let result = parseFloat($("#resultField").val());
-
-//   if (tempType === "Fahrenheit") {
-//     $('#resultField').val((temperature * 9) / 5 + 32);
-//   } else {
-//     result = ((temperature - 32) * 5) / 9;
-//     $('#resultField').val((temperature - 32) * 5) / 9;
-//   }
-
 // }
 
 // °F to °C	Deduct 32, then multiply by 5, then divide by 9
 // °C to °F	Multiply by 9, then divide by 5, then add 32
 
+//I went through several iterations of this...the below works in the sense 
+//that values are pulled / filled / calculated, however I simply cannot get the 
+//math to be correct
+
 $(document).ready(function () {
-    let temp = 0;
+    let temp = 0
 
     $('#choiceF').click(function () {
         temp = ((temp - 32) * 5) / 9;
-        $('#result').html(parseFloat(temp))
+        $('#result').html(temp)
 
     $('#choiceC').click(function () {
         temp = ((temp * 9)/5)+32;

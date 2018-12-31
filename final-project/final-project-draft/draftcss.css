@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: snow;
+    
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    font-size: 45px;
+}
+
+.input {
+    position: relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #962E40, #ED5450);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 1px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* span {
+    transform: scale(.993, .94);
+    transition: .5s .25s;
+    position: absolute;
+    box-shadow: inset 0 0 0 1px #fff, 0 0 0 1px #fff, 1px -1px 10px #ED5450, 1px -1px 10px #962E40;
+}
+
+input {
+    font-family: inherit;
+    line-height: inherit;
+    color: #2e3750;
+    min-width: 12em;
+}
+
+#placeholder {
+    color: #cbd0d5;
+} */
+
+html::after {
+    content: '';
+    background: linear-gradient(21deg, #962E40, #ED5450);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
