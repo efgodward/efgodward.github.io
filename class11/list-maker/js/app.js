@@ -32,10 +32,16 @@ $(document).ready(function() {
 
   // appendItem, that accepts one argument, item, that is called when #clickme is clicked and appends the <li> to #list
   $("#clickme").click(appendItem);
+  let newItem = $("#item").val();
+ 
   function appendItem() {
     $("#list")
       .text($("#item").val())
       .slideDown()
       .append('<li> ' + newItem + '</li>');
     }
+
+    // $("#item" ).focus(function() { 
+    // }
+    // );
 });
