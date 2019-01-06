@@ -24,9 +24,13 @@ $(document).ready(function() {
     $("#list")
       .text("Some new text to be added")
       .slideDown();
-    $("#item").empty();
+
+    let newItem = $("#item").val();
+
+    function appendItem() {
+      $("#item").empty();
+    }
   }
- 
 });
 
 // $('#list').append()
