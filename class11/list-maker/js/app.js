@@ -26,10 +26,12 @@ $(document).ready(function() {
     $("#list")
       .text($("#item").val()) = newItem
       .slideDown();
+    $("input")
+      .empty();
 
-    function appendItem() {
-      $("#item").empty();
-    }
+    // function appendItem() {
+      
+    // }
   }
 });
 
