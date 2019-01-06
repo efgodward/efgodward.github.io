@@ -20,19 +20,18 @@
 
 $(document).ready(function() {
   $("#clickme").click(handleClick);
-  
 
   function handleClick() {
     $("#list")
       .text($("#item").val())
       .slideDown();
-    $("#item").val('');;
+    $("#item").val("");
   }
 
   // appendItem, that accepts one argument, item, that is called when #clickme is clicked and appends the <li> to #list
   // $("#clickme").click(appendItem);
   // let newItem = $("#item").val();
- 
+
   // function appendItem() {
   //   $("<li>"+$("#item").val()+"</li>").appendTo("ul");
   //   $("#list")
@@ -40,12 +39,9 @@ $(document).ready(function() {
   //     .slideDown()
   //     // .append('<li> ' + newItem + '</li>');
   //   }
+});
 
-
-   });
-  
-
-    // $("#item" ).focus(function() { 
-    // }
-    // );
+// $("#item" ).focus(function() {
+// }
+// );
 // });
