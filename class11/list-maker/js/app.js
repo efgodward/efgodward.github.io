@@ -22,7 +22,7 @@ $(document).ready(function() {
   $("#clickme").click(handleClick);
   function handleClick() {
     $("#list")
-      .text("Some new text to be added")
+      .text($("#item").val()) //need to change this to be the input of #item
       .slideDown();
 
     function newItem() {  
