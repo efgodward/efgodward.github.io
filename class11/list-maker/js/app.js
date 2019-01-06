@@ -25,7 +25,8 @@ $(document).ready(function() {
       .text("Some new text to be added")
       .slideDown();
 
-    let newItem = $("#item").val();
+    function newItem() {  
+    let newItem = $("#item").val();}
 
     function appendItem() {
       $("#item").empty();
