@@ -17,3 +17,16 @@
 // 4. handleClick should call a separate function, named appendItem, and pass it the variable newItem
 // 5. handleClick should then clear the text inside of #item
 // 6. Finally, write the function, appendItem (see above)
+
+$(document).ready(function() {
+  $("#clickme").click(handleClick);
+  function handleClick() {
+    $("#list")
+      .text("Some new text to be added")
+      .slideDown();
+    $("#item").empty();
+  }
+ 
+});
+
+// $('#list').append()
