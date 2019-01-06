@@ -36,6 +36,6 @@ $(document).ready(function() {
     $("#list")
       .text($("#item").val())
       .slideDown()
-      .append("<li></li>");
-  }
+      .append('<li> ' + newItem + '</li>');
+    }
 });
