@@ -20,13 +20,12 @@
 
 $(document).ready(function() {
   $("#clickme").click(handleClick);
+  let newItem = $("#item").val();
+
   function handleClick() {
     $("#list")
-      .text($("#item").val()) //need to change this to be the input of #item
+      .text($("#item").val()) = newItem
       .slideDown();
-
-    function newItem() {  
-    let newItem = $("#item").val();}
 
     function appendItem() {
       $("#item").empty();
