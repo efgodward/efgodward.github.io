@@ -20,19 +20,22 @@
 
 $(document).ready(function() {
   $("#clickme").click(handleClick);
-  let newItem = $("#item").val();
+  
 
   function handleClick() {
-    $("#list")
-      .text($("#item").val()) = newItem
-      .slideDown();
-    $("input")
-      .empty();
+    let newItem = $("#item").val();
+    // $("#list")
+    //   .text($("#item").val())
+    //   .slideDown();
+    $("#item").empty();
+  }
 
-    // function appendItem() {
-      
-    // }
+  // appendItem, that accepts one argument, item, that is called when #clickme is clicked and appends the <li> to #list
+  $("#clickme").click(appendItem);
+  function appendItem() {
+    $("#list")
+      .text($("#item").val())
+      .slideDown()
+      .append("<li></li>");
   }
 });
-
-// $('#list').append()
