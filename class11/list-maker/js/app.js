@@ -30,7 +30,7 @@ $(document).ready(function() {
     $("#item").val("");
   }
   function appendItem() {
-      $("<li>"+$(newItem).val()+"</li>").appendTo("ul");
+      $("<li>"+$(newItem).val()+"</li>").appendTo("#list");
     // struggling to have this form a list at the end versus resetting w/ every entry
 
 
