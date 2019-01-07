@@ -30,8 +30,16 @@ $(document).ready(function() {
     $("#item").val("");
   }
   function appendItem() {
-      $("<li>"+$(newItem).val()+"</li>").appendTo("#list");
-    // struggling to have this form a list at the end versus resetting w/ every entry
+    // var add = $('#item').val();
+    // $("<li>"+$(newItem).val()+"</li>").appendTo("#list");
+    // $('#list').append('<li>' + $(newItem).val() + add + '</li>');
 
+    // $('#clickme').click(function(){
+    //   $('#list').append($('<li>', {
+    //        text: $("#item").val()
 
-  }});
+    var toAdd = $("#item").val();
+    $("#list").append("<li>" + toAdd + "</li>");
+  }
+});
+// struggling to have this form a list at the end versus resetting w/ every entry
