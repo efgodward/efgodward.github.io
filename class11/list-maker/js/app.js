@@ -29,17 +29,29 @@ $(document).ready(function() {
       .slideDown();
     $("#item").val("");
   }
-  function appendItem() {
-    // var add = $('#item').val();
-    // $("<li>"+$(newItem).val()+"</li>").appendTo("#list");
-    // $('#list').append('<li>' + $(newItem).val() + add + '</li>');
 
-    // $('#clickme').click(function(){
-    //   $('#list').append($('<li>', {
-    //        text: $("#item").val()
-
-    var toAdd = $("#item").val();
-    $("#list").append("<li>" + toAdd + "</li>");
+  function appendItem(newItem) {
+    $("#list").append(newItem + " ");
   }
+
+  //some of the append options I've tried...truggling to have this form a list at the end versus resetting w/ every entry
+  // var add = $('#item').val();
+  // $("<li>"+$(newItem).val()+"</li>").appendTo("#list");
+  // $('#list').append('<li>' + $(newItem).val() + add + '</li>');
+
+  // $('#clickme').click(function(){
+  //   $('#list').append($('<li>', {
+  //        text: $("#item").val()
+
+  // var toAdd = $("#item").val();
+  // $("#list").append("<li>" + toAdd + "</li>");
+
+  //bonus items:
+  //  $('#item').focus ()
+
+  // function removeItem(){
+  // 	$('#listItem').on('click',function(){
+  // 		$(this).remove();
+  // 	})
+  // }
 });
-// struggling to have this form a list at the end versus resetting w/ every entry
