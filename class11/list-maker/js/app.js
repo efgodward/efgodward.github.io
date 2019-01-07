@@ -25,6 +25,7 @@ $(document).ready(function() {
     function appendItem(item) {
       let newItem = "<li>" + item + "</li>";
       $("#list").append(newItem);
+      $("#item").val("");
       $("#item").focus();
     }
   });
@@ -38,7 +39,7 @@ $(document).ready(function() {
   //   $("#list")
   //     .text($("#item").val())
   //     .slideDown();
-  //   $("#item").val("");
+  //   
   // }
 
   // function appendItem() {
