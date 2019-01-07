@@ -21,27 +21,17 @@
 $(document).ready(function() {
   $("#clickme").click(handleClick);
 
+  let newItem = $("#item").val();
+
   function handleClick() {
     $("#list")
       .text($("#item").val())
       .slideDown();
     $("#item").val("");
   }
+  function appendItem() {
+      $("<li>"+$(newItem).val()+"</li>").appendTo("ul");
+    // struggling to have this form a list at the end versus resetting w/ every entry
 
-  // appendItem, that accepts one argument, item, that is called when #clickme is clicked and appends the <li> to #list
-  // $("#clickme").click(appendItem);
-  // let newItem = $("#item").val();
 
-  // function appendItem() {
-  //   $("<li>"+$("#item").val()+"</li>").appendTo("ul");
-  //   $("#list")
-  //     .text($("#item").val())
-  //     .slideDown()
-  //     // .append('<li> ' + newItem + '</li>');
-  //   }
-});
-
-// $("#item" ).focus(function() {
-// }
-// );
-// });
+  }});
