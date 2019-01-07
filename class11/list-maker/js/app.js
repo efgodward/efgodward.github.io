@@ -19,20 +19,31 @@
 // 6. Finally, write the function, appendItem (see above)
 
 $(document).ready(function() {
-  $("#clickme").click(handleClick);
+  $("#clickme").click(function handleClick() {
+    let output = $("#item").val();
+    appendItem(output);
+    function appendItem(item) {
+      let newItem = "<li>" + item + "</li>";
+      $("#list").append(newItem);
+      $("#item").focus();
+    }
+  });
 
-  let newItem = $("#item").val();
+  //previous attempts/ iterations documented below...
+  // $("#clickme").click(handleClick);
 
-  function handleClick() {
-    $("#list")
-      .text($("#item").val())
-      .slideDown();
-    $("#item").val("");
-  }
+  // let newItem = $("#item").val();
 
-  function appendItem(newItem) {
-    $("#list").append(newItem + " ");
-  }
+  // function handleClick() {
+  //   $("#list")
+  //     .text($("#item").val())
+  //     .slideDown();
+  //   $("#item").val("");
+  // }
+
+  // function appendItem() {
+  //   $("#list").append('</li>'+ newItem + '</li>');
+  // }
 
   //some of the append options I've tried...truggling to have this form a list at the end versus resetting w/ every entry
   // var add = $('#item').val();
@@ -47,8 +58,6 @@ $(document).ready(function() {
   // $("#list").append("<li>" + toAdd + "</li>");
 
   //bonus items:
-  //  $('#item').focus ()
-
   // function removeItem(){
   // 	$('#listItem').on('click',function(){
   // 		$(this).remove();
