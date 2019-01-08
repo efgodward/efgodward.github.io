@@ -15,8 +15,13 @@
 // Bonus 2: Instead of using .removeClass and .addClass, use only .toggleClass on <body>
 //          Hint: you may have to use the .attr() method to grab the current class on <body>
 
-
-
 $(document).ready(function() {
+  $("#city-type").change(function() {
+    let city = $("#city-type").val();
+    // console.log(city);
 
+    $("body")
+      .removeClass()
+      .addClass(city);
+  });
 });
