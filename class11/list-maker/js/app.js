@@ -28,6 +28,10 @@ $(document).ready(function() {
       $("#item").val("");
       $("#item").focus();
     }
+
+    $("#list").on("click", "li", function() {
+        $(this).remove();
+      });
   });
 
   //previous attempts/ iterations documented below...
@@ -39,7 +43,6 @@ $(document).ready(function() {
   //   $("#list")
   //     .text($("#item").val())
   //     .slideDown();
-  //   
   // }
 
   // function appendItem() {
@@ -59,9 +62,6 @@ $(document).ready(function() {
   // $("#list").append("<li>" + toAdd + "</li>");
 
   //bonus items:
-  // function removeItem(){
-  // 	$('#listItem').on('click',function(){
-  // 		$(this).remove();
-  // 	})
+  //
   // }
 });
