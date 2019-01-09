@@ -1,20 +1,66 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background: snow;
-    
+    position: relative;
+    color: #fff;
+    background: #575a6c;
+}
+
+header {
+    display: flex;
+    padding: 20px;
 }
 
 h1 {
-    font-family: 'Major Mono Display', monospace;
-    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: thin;
+    text-align: left;
     font-size: 45px;
+    display: inline;
 }
 
-.input {
+button {
+    align-self: flex-end;
+    /* position: relative; */
+    display: inline;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0 20px;
+    font-size: 13px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form {
+    display: block;
+    margin-top: 0em;
     position: relative;
-    font-size: 1.5em;
-    background: linear-gradient(21deg, #962E40, #ED5450);
+    font-size: 17px;
+    /* background: linear-gradient(21deg, #962E40, #f6b93b); */
     padding: 3px;
     display: inline-block;
     border-radius: 1px;
@@ -25,30 +71,35 @@ h1 {
     transform: scale(1);
 }
 
-/* span {
-    transform: scale(.993, .94);
-    transition: .5s .25s;
-    position: absolute;
-    box-shadow: inset 0 0 0 1px #fff, 0 0 0 1px #fff, 1px -1px 10px #ED5450, 1px -1px 10px #962E40;
+img {
+    width: 225px;
 }
-
-input {
-    font-family: inherit;
-    line-height: inherit;
-    color: #2e3750;
-    min-width: 12em;
-}
-
-#placeholder {
-    color: #cbd0d5;
-} */
 
 html::after {
     content: '';
-    background: linear-gradient(21deg, #962E40, #ED5450);
+    background: linear-gradient(21deg, #962E40, #f6b93b);
     height: 3px;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.top {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    background: #962E40;
+    padding: 40px;
+    align: bottom;
+    width: 100%;
+}
+
+.bottom {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    background: #f6b93b;
+    padding: 40px;
+    width: 100%;
 }

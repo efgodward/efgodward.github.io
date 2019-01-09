@@ -11,11 +11,23 @@
       href="https://fonts.googleapis.com/css?family=Major+Mono+Display"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+JP"
+      rel="stylesheet"
+    />
 
     <script src="main.js"></script>
   </head>
   <body>
-    <h1>Table Tonight</h1>
+    <header>
+      <h1>TableTonight</h1>
+      <button type="button">PRESS KIT</button>
+    </header>
+
     <h2>Coming Soon!</h2>
 
     <p>
@@ -24,14 +36,58 @@
       across the City's most sought after restaurants.
     </p>
 
+    <img src="iPhone-XS-Max-Portrait-Space-Gray.psd" alt="" />
+
+    <h3>Our Partners</h3>
+
+    <div class="restaurant-logos">
+      <img src="11madpark logo.png" alt="Eleven Madison Park" />
+      <img src="per_se_logo.gif" alt="Per Se" />
+    </div>
+
     <p>Sign up now to be notified when Table Tonight launches:</p>
 
-    <p>
-      <span class="input">
-        <input type="text" placeholder="email address" />
-        <span></span>
-      </span>
-    </p>
+    <form class="contact-form">
+      <div class="form-input">
+        <label for="field1">Name *</label>
+        <input
+          type="text"
+          name="field1"
+          data-validate="required,Generic"
+          placeholder="Your Name..."
+          required=""
+        />
+      </div>
+
+      <div class="form-input">
+        <label for="email">Email Address *</label>
+        <input
+          type="text"
+          name="email"
+          data-validate="required,Email,required"
+          placeholder="Your Email Address..."
+          required=""
+        />
+      </div>
+
+      <div class="form-input">
+        <label for="field2">Message *</label>
+        <textarea
+          name="field2"
+          data-validate="required,Generic"
+          placeholder="Your Message..."
+          required=""
+        ></textarea>
+      </div>
+      <button class="submit-button">SUBMIT</button>
+    </form>
+
+    <footer class="top"></footer>
+
+    <footer class="bottom">
+      © 2019 TableTonight. All rights reserved. iPhone is a trademark of Apple
+      Inc. App Store is a service mark of Apple inc. Designed by Emily Godward.
+    </footer>
 
     <script type="text/javascript" src="draftJS.js"></script>
   </body>
