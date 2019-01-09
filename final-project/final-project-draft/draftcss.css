@@ -2,8 +2,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     position: relative;
-    color: #fff;
-    background: #575a6c;
+    color: #3E3637;
+    background: #fff;
 }
 
 header {
@@ -17,6 +17,16 @@ h1 {
     text-align: left;
     font-size: 45px;
     display: inline;
+    color: #3E3637;
+}
+
+h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: thin;
+    text-align: center;
+    font-size: 30px;
+    display: inline;
+    color: #3E3637;
 }
 
 button {
@@ -25,11 +35,11 @@ button {
     display: inline;
     height: 36px;
     line-height: 36px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #9B5D4E;
     padding: 0 20px;
     font-size: 13px;
     background: transparent;
-    color: #fff;
+    color: #9B5D4E;
     text-decoration: none;
     font-weight: 900;
     text-transform: uppercase;
@@ -46,8 +56,8 @@ button {
 
 button:hover {
     color: #ffffff !important;
-    background: #f6b93b;
-    border-color: #f6b93b !important;
+    background: #CD6657;
+    border-color: #CD6657 !important;
     transition: all 0.4s ease 0s;
 }
 
@@ -73,12 +83,19 @@ p {
 
 img {
     width: 225px;
+    height: 25%;
+    margin: 0 auto;
+}
+.restaurant-logos {
+    display: flex;
+    align-content: center;
+    padding: 10px;
 }
 
 html::after {
     content: '';
-    background: linear-gradient(21deg, #962E40, #f6b93b);
-    height: 3px;
+    background: linear-gradient(15deg, #B74134, #CD6657);
+    height: 15px;
     width: 100%;
     position: absolute;
     left: 0;
@@ -86,20 +103,22 @@ html::after {
 }
 
 .top {
+    color: #CDCECD;
     font-size: 13px;
     line-height: 20px;
     text-align: center;
-    background: #962E40;
+    background: #B74134;
     padding: 40px;
     align: bottom;
     width: 100%;
 }
 
 .bottom {
+    color: #CDCECD;
     font-size: 13px;
     line-height: 20px;
     text-align: center;
-    background: #f6b93b;
+    background: #CD6657;
     padding: 40px;
     width: 100%;
 }
