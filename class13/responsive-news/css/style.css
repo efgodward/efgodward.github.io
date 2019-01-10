@@ -1,7 +1,7 @@
 body {
-  background-color: #efefef;
-  font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
+	background-color: #efefef;
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 #container {
@@ -100,9 +100,21 @@ p {
 }
 
 /* MEDIA QUERIES */
+
 @media (max-width: 480px) {
 	#container {
 		width: 100%;
 	}
+	.main-article {
+		width: 100%;
+	}
 }
 
+@media (max-width: 700px) {
+	main {
+		display: block;
+	}
+	#articles, #side-column {
+		width: 100%;
+	}
+}

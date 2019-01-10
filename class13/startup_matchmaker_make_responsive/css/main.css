@@ -7,7 +7,6 @@ body {
 	margin: 0 auto;
 }
 
-
 /* Text Styles */
 
 h1 {
@@ -30,7 +29,6 @@ p {
 	margin: 0 0 30px 0;
 }
 
-
 /* Shared Styles */
 
 .button {
@@ -47,7 +45,6 @@ p {
 	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .2);
 	border-radius: 5px;
 }
-
 
 /* Header Styles */
 
@@ -89,7 +86,6 @@ header {
 	color: yellow;
 }
 
-
 /* Tagline Styles */
 
 .tagline {
@@ -113,7 +109,6 @@ header {
 	border-bottom: 3px solid yellow;
 }
 
-
 /* Banner */
 
 .banner {
@@ -132,7 +127,6 @@ header {
 	padding: 36px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, .75);
 }
-
 
 /* Three columns */
 
@@ -157,7 +151,6 @@ header {
 	background: #C6C6C6;
 }
 
-
 /* Footer */
 
 footer {
@@ -166,18 +159,72 @@ footer {
 	padding: 20px 30px;
 }
 
-
 /* MEDIA QUERIES */
 
 /* Medium screens and smaller smaller - less than 1000px */
-	/* give body width of 95% */
-	/* have elements inside of header stack on top of each other */
-	/* give the header nave a margin top of 20px and have the elements start from the left instead of right */
-	/* change the padding of header nav links so it is on the right instead of left */
+
+/* give body width of 95% */
+
+/* have elements inside of header stack on top of each other */
+
+/* give the header nav a margin top of 20px and have the elements start from the left instead of right */
+
+/* change the padding of header nav links so it is on the right instead of left */
+
+@media (min-width: 551px) and (max-width: 1000px) {
+	body {
+		width: 95%;
+		border: 5px solid blue;
+	}
+	header {
+		display: block;
+	}
+	.header-nav {
+		margin-top: 20px;
+		justify-content: left;
+		display: block;
+	}
+	.header-nav__a {
+		padding-right: 20px;
+		padding-left: none;
+	}
+}
 
 /* Small screens and smaller - less than 550px*/
-	/* give body a width of 100% */
-	/* don't have header nav be display flex */
-	/* center the content inside banner */
-	/* have the touts stack on top of eachother */
-	/* make each tout full width using percent width. you may need to use the border-box property to prevent the padding from the tout's padding cause an overflow of content. get rid of borders on the tout */
+
+/* give body a width of 100% */
+
+/* don't have header nav be display flex */
+
+/* center the content inside banner */
+
+/* have the touts stack on top of eachother */
+
+/* make each tout full width using percent width. you may need to use the border-box property to prevent the padding from the tout's padding cause an overflow of content. get rid of borders on the tout */
+
+@media (max-width: 550px) {
+	body {
+		width: 100%;
+		border: 5px solid red;
+	}
+	header {
+		display: block;
+	}
+	.header-h1 {
+		padding-bottom: 20px;
+	}
+	.header-nav {
+		display: block;
+	}
+	.banner {
+		justify-content: center;
+	}
+	.touts {
+		display: block;
+	}
+	.tout {
+		width: 100%;
+		box-sizing: border-box;
+		border-right: none;
+	}
+}
