@@ -21,8 +21,9 @@ h1 {
     font-style: thin;
     text-align: left;
     font-size: 45px;
-    display: inline;
     color: #3E3637;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 h2 {
@@ -34,14 +35,44 @@ h2 {
     color: #3E3637;
 }
 
-button {
-    align-self: flex-end;
-    /* position: relative; */
-    display: inline;
+.press-button {
     height: 36px;
     line-height: 36px;
     border: 1px solid #9B5D4E;
     padding: 0 20px;
+    margin: 20px;
+    font-size: 13px;
+    background: transparent;
+    color: #9B5D4E;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+@media (min-width: 651px)
+.press-button {
+    top: 64px;
+}
+
+.submit-button {
+    align-self: flex-end;
+    display: inline;
+    /* height: 36px; */
+    line-height: 36px;
+    border: 1px solid #9B5D4E;
+    padding: 0 20px;
+    margin: 20px;
     font-size: 13px;
     background: transparent;
     color: #9B5D4E;
@@ -86,7 +117,7 @@ p {
     transform: scale(1);
 }
 
-.form-group {
+.email-signup {
     position: relative;
     padding-top: 1.5rem;
 }
