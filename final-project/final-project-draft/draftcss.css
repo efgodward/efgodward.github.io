@@ -60,10 +60,10 @@ h2 {
     right: 10px;
 }
 
-@media (min-width: 651px)
-.press-button {
-    top: 64px;
-}
+/* @media (min-width: 500px)
+button {
+   
+} */
 
 .submit-button {
     align-self: flex-end;
@@ -115,11 +115,17 @@ p {
     z-index: 1;
     opacity: 1;
     transform: scale(1);
+    display: block;
 }
 
 .email-signup {
     position: relative;
     padding-top: 1.5rem;
+    display: block;
+}
+
+.email-signup {
+    display: block;
 }
 
 label {
@@ -145,6 +151,14 @@ a, img {
     display: flex;
     align-content: center;
     padding: 10px;
+}
+
+@media (max-width: 550px) {
+    .restaurant-logos {
+        display: block;
+        margin: 20px;
+        padding: 20px;
+}
 }
 
 html::after {
