@@ -9,6 +9,12 @@ header {
 	width: 100%;
 	top: 0;
 	height: 75px;
+	font-size: 45px;
+	font-family: 'Courier New', Courier, monospace;
+	color: snow;
+	text-align: center;
+	line-height: 1;
+	transform: all .4s;
 }
 
 img {
@@ -17,10 +23,8 @@ img {
 	margin: 30px auto 0;
 }
 
-h1 {
-	font-size: 40px;
-	font-family: 'Courier New', Courier, monospace;
-	color: snow;
-	text-align: center;
-	margin-top: 18px;
+.small-header {
+	height: 30px;
+	background-color: teal;
+	font-size: 30px;
 }
