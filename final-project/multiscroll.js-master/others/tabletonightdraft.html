@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>multiscroll.js - split multi-scrolling pages plugin</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
+	<meta name="keywords"  content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="../jquery.multiscroll.css" />		
+	<link rel="stylesheet" type="text/css" href="examples.css" />		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="../jquery.multiscroll.js"></script>
+
+	<script type="text/javascript">
+	 $(document).ready(function() {
+            $('#myContainer').multiscroll({
+            	sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+            	anchors: ['first', 'second', 'third'],
+            	menu: '#menu',
+            	css3: true,
+            	paddingTop: '70px',
+            	paddingBottom: '70px'
+            });
+        });
+    </script>
+
+
+    <style>
+    h1{
+    	color: #fff;
+    }
+    
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+	
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+	</style>
+</head>
+<body>
+
+
+<div id="header"><header>
+	<h1>TableTonight</h1>
+
+	<button class="press-button">PRESS KIT</button>
+</div>
+<div id="footer"><p>
+	© 2019 TableTonight. All rights reserved. iPhone is a trademark of
+	Apple Inc. App Store is a service mark of Apple inc.
+  </p>
+  <p>Designed by Emily Godward for GA's FEWD Course</p></div>
+
+
+<ul id="menu">
+	<li data-menuanchor="first"><a href="#first">About Us</a></li>
+	<li data-menuanchor="second"><a href="#second">Partner Restaurants</a></li>
+	<li data-menuanchor="third"><a href="#third">Stay in Touch</a></li>
+</ul>
+
+<div id="myContainer">
+
+	<div class="ms-left">
+		<div class="ms-section" id="left1">
+			<h1>Coming Soon!</h1>
+          <p>
+            Looking for a seat at NYC's hottest tables without booking months in
+            advance? TableTonight aggregates reservation openings and
+            cancellations across the City's most sought after restaurants.
+          </p>
+
+          <p>
+            TableTonight's simple to use: simply create an account, select the
+            restaurants you have your eye on, and get notified when there is an
+            opening or cancellation.
+          </p>
+        </div>
+		</div>
+
+		<div class="ms-section" id="left2">
+			<h1>Left 2 </h1>
+		</div>
+
+		<div class="ms-section" id="left3">
+			<h1>Left 3</h1>
+		</div>
+	</div>
+	
+	<div class="ms-right">
+		<div class="ms-section" id="right1">
+			<h1>Right 1</h1>
+		</div>
+
+		<div class="ms-section" id="right2">
+			<h1>Right 2</h1>
+		</div>
+
+		<div class="ms-section" id="right3">
+			<h1>Right 3</h1>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>

@@ -32,6 +32,13 @@ h1 {
     justify-content: flex-start;
     align-items: flex-end;
 }
+/* 
+#multiscroll {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 3px;
+} */
+
 
 h2 {
     font-family: 'Noto Sans JP', sans-serif;
@@ -67,10 +74,6 @@ h2 {
     right: 10px;
 }
 
-/* @media (min-width: 500px)
-button {
-   
-} */
 
 .submit-button {
     align-self: flex-end;
