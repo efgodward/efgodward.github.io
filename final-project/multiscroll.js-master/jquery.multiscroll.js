@@ -5,6 +5,8 @@
  *
  * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
  */
+
+
 (function($, window, document, Math, undefined) {
 
     $.fn.multiscroll = function(options) {
