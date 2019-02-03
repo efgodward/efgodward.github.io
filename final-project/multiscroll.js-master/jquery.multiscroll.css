@@ -1,6 +1,9 @@
 html, body {
     margin: 25px;
     padding: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
     color: #3E3637;
     text-align: center;
@@ -10,21 +13,14 @@ html, body {
 
 h1 {
     font-family: 'Noto Sans JP', sans-serif;
-    font-style: thin;
-    text-align: center;
     font-size: 35px;
     color: #3E3637;
-    justify-content: flex-start;
-    align-items: flex-end;
     margin: 25px;
 }
 
 h2 {
     font-family: 'Noto Sans JP', sans-serif;
-    font-style: thin;
-    text-align: center;
     font-size: 30px;
-    display: inline;
     color: #3E3637;
     margin: 25px;
 }
@@ -44,28 +40,38 @@ p {
 
 a, img {
     width: 125px;
-    /* height: 25%; */
-    margin: 0 auto;
+    padding: 15px;
 }
 
 .restaurant-logos {
-    /* display: flex;
-    align-content: center;
-    padding: 10px; */
-    display: grid;
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 80px auto 80px;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
+    position: absolute;
+    vertical-align: middle;
+    padding: 25px;
+    margin: 25px;
 }
 
 /* .elevenmad {
     justify-self: stretch;
+    z-index: 0;
+}
+
+.bernadin {
+    justify-self: stretch;
+    z-index: 1;
+}
+
+.per_se_logo {
+    justify-self: stretch;
+    z-index: 2;
+}
+
+.brooklynfare {
+    justify-self: stretch;
+    z-index: 3;
 } */
 
 @media (max-width: 550px) {
     .restaurant-logos {
-        display: block;
         margin: 20px;
         padding: 20px;
     }
@@ -79,7 +85,7 @@ a, img {
 /* need to resize this */
 
 .submit-button {
-    display: inline-block;
+    /* display: inline-block; */
     background: transparent;
     border: 1px solid #ffffff;
     font-size: 14px;
@@ -98,33 +104,13 @@ button:hover {
     transition: all 0.4s ease 0s;
 }
 
-.contact-form {
-    color: #fff;
-    display: block;
-    margin-top: 0em;
-    position: relative;
-    font-size: 17px;
-    /* background: linear-gradient(21deg, #962E40, #f6b93b); */
-    padding: 3px;
-    display: inline-block;
-    border-radius: 1px;
-    position: relative;
-    margin: 0 auto;
-    z-index: 1;
-    opacity: 1;
-    transform: scale(1);
-    display: block;
-}
-
-.email-signup {
-    position: relative;
-    padding: 20px;
-    margin: 15px;
-}
-
-.thanks {
-    color: #fff;
-    font-size: 17px;
+.bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
 }
 
 .footer, .footer2 {
@@ -132,11 +118,12 @@ button:hover {
     color: #fff;
     text-align: center;
     font-size: 10px;
-    vertical-align: bottom;
 }
 
 .ms-tableCell {
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     vertical-align: middle;
     width: 100%;
     height: 100%;
@@ -159,13 +146,13 @@ button:hover {
     max-width: 220px;
 }
 
-.multiscroll-tooltip.right {
+/* .multiscroll-tooltip.right {
     right: 20px;
 }
 
 .multiscroll-tooltip.left {
     left: 20px;
-}
+} */
 
 .ms-responsive .ms-hide {
     display: none;
@@ -210,7 +197,7 @@ button:hover {
 }
 
 #menu li.active {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, .3);
     color: #000;
 }
 
@@ -224,4 +211,142 @@ button:hover {
 #menu li:hover {
     background: rgba(255, 255, 255, 0.8);
     transition: all 0.2s ease 0s;
+}
+
+#map {
+    width: 550px;
+    height: 350px;
+}
+
+@media (max-width: 700px) {
+    #map {
+        display: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body .container {
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 550px;
+    display: block;
+    background: rgba(255, 255, 255, .3);
+    padding: 10px 50px 50px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 400px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #3E3637;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus~label, input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #C63D0F;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 400px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #C63D0F;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus~.bar:before, input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+input:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #C63D0F
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #C63D0F;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #C63D0F;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
 }

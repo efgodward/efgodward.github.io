@@ -1,32 +1,29 @@
-// Create a submit handler for the meme form
 
 $(".meme-form").submit(memeGenerate);
 
 function memeGenerate() {
   event.preventDefault();
 
-  let input = $(".meme-form").val();
+  let input = $(".meme-input").val();
   console.log(input);
 
   var xhr = $.get(
-    "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=ER9MeL5OVp14e4eR4EpQuneU9Bc12UH4"
+    "http://api.giphy.com/v1/gifs/search?q="+input+"&api_key=ER9MeL5OVp14e4eR4EpQuneU9Bc12UH4"
   );
   xhr.done(function(data) {
-    console.log("success got data", data);
-
-    let post = data.data[0].title;
-
-    let title = data.data[0].title;
-    let gif = data.data[0].images.original.url;
-
-    console.log(gif);
-
-    // memeGenerate.forEach(function(element, index) {
-    //   console.log(`${element} Ryan Gosling`);
-
+  
+    let memes = data.data
+    console.log(memes);
     
-    });
-  };
+    memes.forEach(function(element, index) {
+      console.log(element);
+      
+      $('.meme-list').append(`<li><video src='${element.images.looping.mp4}' type="video/mp4" autoplay></video></li>`);
+    })
+
+  });}
+
+// Create a submit handler for the meme form
 
 // Do all of the following inside of this submit handler function...
 

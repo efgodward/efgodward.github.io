@@ -37,6 +37,37 @@
         });
       });
     </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdFt7VSUY6mcM_LTIZVNUhfa2gJi6En4M"></script>
+<script>
+ 
+  var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var labelIndex = 0;
+
+  function initialize() {
+    var NYC = { lat: 40.739667, lng: -73.989528};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: NYC
+    });
+
+    // This event listener calls addMarker() when the map is clicked.
+    google.maps.event.addListener(map, 'click', function(event) {
+      addMarker(event.latLng, map);
+    });
+
+    addMarker(NYC, map);
+  }
+  function addMarker(location, map) {
+    
+    var marker = new google.maps.Marker({
+      position: location,
+      label: '🙂',
+      map: map
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
   </head>
   <body>
     <header><h1>TableTonight</h1></header>
@@ -69,7 +100,32 @@
         </div>
 
         <div class="ms-section" id="left3">
-          <h1>Get notified when we launch!</h1>
+          <div class="container">
+  
+            <h2>Signup to get notified when we launch!<small></h2>
+            
+            <form>
+               <!--  method="POST" action="https://formspree.io/efgodward@gmail.com"> -->
+              <div class="group">      
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+              </div>
+                
+              <div class="group">      
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+              </div>
+              
+            </form>
+            
+          </div>
+
+          </div>
+            <p class="thanks!"></p>
         </div>
       </div>
 
@@ -100,16 +156,8 @@
         </div>
 
         <div class="ms-section" id="right3">
-          
-          <form class="contact-form" method="POST" action="https://formspree.io/efgodward@gmail.com">
-            <input label="name" type="text" class="namethanks" placeholder="name">     
-            <input label="email" type="email" name="email" placeholder="email" id="dynamic-label-input">
-                <button class="submit-button">SUBMIT</button>
-          </form>
-            <p class="thanks!">
-            </p>
-          </form>
-
+          <div id="map"></div>
+            <div class="bottom">
             <p class="footer">
                 © 2019 TableTonight. All rights reserved. iPhone is a trademark of
                 Apple Inc. App Store is a service mark of Apple inc.
@@ -117,6 +165,7 @@
               <p class="footer2">
                 Designed by Emily Godward for GA's FEWD Course</p>
             </div>
+          </div>
         </div>
       </div>
     </div>
