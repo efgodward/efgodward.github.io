@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TasteTest - Coming Soon!</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Major+Mono+Display"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+JP"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../jquery.multiscroll.css" />
+ 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="main.js"
+    ></script>
+    <script type="text/javascript" src="../jquery.multiscroll.js"></script>
+    <script type="text/javascript" src="../jquery.multiscroll.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#myContainer").multiscroll({
+          sectionsColor: ["#C63D0F", "#C63D0F", "#C63D0F"],
+          anchors: ["first", "second", "third"],
+          menu: "#menu",
+          css3: true
+        });
+      });
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdFt7VSUY6mcM_LTIZVNUhfa2gJi6En4M"></script>
+<script>
+ 
+  var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var labelIndex = 0;
+
+  function initialize() {
+    var NYC = { lat: 40.739667, lng: -73.989528};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: NYC
+    });
+
+    // This event listener calls addMarker() when the map is clicked.
+    google.maps.event.addListener(map, 'click', function(event) {
+      addMarker(event.latLng, map);
+    });
+
+    addMarker(NYC, map);
+  }
+  function addMarker(location, map) {
+    
+    var marker = new google.maps.Marker({
+      position: location,
+      label: '🙂',
+      map: map
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+  </head>
+  <body>
+    <header></header>
+
+    <ul id="menu">
+      <div class="navbutton">
+        <li data-menuanchor="first"><a href="#first">Home</a></li>
+        <li data-menuanchor="second"><a href="#second">About</a></li>
+        <li data-menuanchor="third"><a href="#third">Contact</a></li>
+      </div>
+    </ul>
+
+    <div id="myContainer">
+      <div class="ms-left">
+        <div class="ms-section" id="left1">
+            <h1>TasteTest</h1>
+          <h2>Coming Soon!</h2>
+          <p>
+            Ever how much work goes into the seasonal menus of NYC's top restuarant? Curious for a taste of the process?</p>
+            
+          <p>Now with TasteTest, you can have a seat at the table. Join NYC's greatest chefs as a taster of thier up and coming seasonal menus.</p>
+        
+          <!-- <p class="restaurants">
+              Some of our partner restaurants include:
+             <li>Eleven Madison Park</li>
+             <li>Le Bernadin</li>
+             <li>Per Se</li>
+             <li>Chef's Table at Brooklyn Fare</li>
+             <li>And more to come...</li>
+            </p> -->
+        </div>
+
+        <div class="ms-section" id="left2">
+    
+        </div>
+
+        <div class="ms-section" id="left3">
+          <div class="container">
+  
+            <h2>Signup to get notified when we launch!<small></h2>
+            
+            <form id="frm1" >
+  
+              <div class="group">      
+                <input type="text" required id='name'>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+              </div>
+                
+              <div class="group">      
+                <input type="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+              </div>
+
+            <button type="submit" onclick="myFunction()" value="Submit" > Submit </button>
+    
+            </form>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="ms-right">
+        <div class="ms-section" id="right1">
+      <h2 class="partner">Our Restaurants</h2>
+          <div class="restaurant-logos">
+            <a href="https://www.elevenmadisonpark.com/" class="elevenmad">
+              <img src="11madpark logo.png" alt="Eleven Madison Park" />
+            </a>
+            <a href="https://www.le-bernardin.com/" class="bernadin">
+              <img src="le bernadin logo.png" alt="Le Bernadin"
+            /></a>
+            <a href="https://www.thomaskeller.com/perseny" class="per_se_logo">
+              <img src="per_se_logo.gif" alt="Per Se"
+            /></a>
+            <a href="https://www.brooklynfare.com/pages/chefs-table" class="brooklynfare">
+              <img src="chefs table.png" alt="Chef's Table at Brooklyn Fare"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ms-section" id="right2">
+          <h2>We welcome you to a seat at previously never-offered tables...</h2>
+          
+          <p class="simple">
+          TasteTest brings you a behind the scenes look at the creative efforts that go into some of New York's most inventive restaurants. You're only a few clicks away from being part of an exclusive tasting experience.
+        </p>
+
+        <p class="simple">
+            Joining is easy. Simply create an account, rank your top three restaurants, and we'll notify you when it's chefs need additional palates to test their newest creations. 
+          </p>
+        </div>
+
+        <div class="ms-section" id="right3">
+          <h3 class="location">Proudly based in NYC - Visit us at 902 Broadway, New York, NY 10010</h3>
+          <div id="map"></div>
+          
+            <div class="bottom">
+            <p class="footer">
+                © 2019 TasteTest. 
+              </p>
+              <p class="footer2">
+                Designed by Emily Godward for GA's FEWD Course. Multiscroll plugin by Alvaro Trigo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- method="POST" action="https://formspree.io/efgodward@gmail.com">  -->
