@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset='utf-8'/>
+    <meta name="author" content="Emily Godward">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="TasteTest - Exclusive Dining Experiences">
+    <meta property="og:description" content="Offering previews of NYC's top restaurant menus alongside the chefs who create them.">
+    <meta name="twitter:title" content="TasteTest - Exclusive Dining Experiences">
+    <meta name="twitter:description" content=" Offering previews of NYC's top restaurant menus alongside the chefs who create them.">
+
     <title>TasteTest - Coming Soon!</title>
 
     <link
@@ -25,15 +33,15 @@
       src="main.js"
     ></script>
     <script type="text/javascript" src="../jquery.multiscroll.js"></script>
-    <script type="text/javascript" src="../jquery.multiscroll.js"></script>
-
+    <!-- <script type="text/javascript" src="multiscroll.responsiveExpand.min.js"></script> -->
+    <!-- <script type="text/javascript" src="jquery.multiscroll.extensions.min.js"></script> -->
     <script type="text/javascript">
       $(document).ready(function() {
         $("#myContainer").multiscroll({
           sectionsColor: ["#C63D0F", "#C63D0F", "#C63D0F"],
           anchors: ["first", "second", "third"],
           menu: "#menu",
-          css3: true
+          css3: true,
         });
       });
     </script>
@@ -50,7 +58,6 @@
       center: NYC
     });
 
-    // This event listener calls addMarker() when the map is clicked.
     google.maps.event.addListener(map, 'click', function(event) {
       addMarker(event.latLng, map);
     });
@@ -68,6 +75,14 @@
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c63d0f">
+<meta name="msapplication-TileColor" content="#c63d0f">
+<meta name="theme-color" content="#c63d0f">
+
   </head>
   <body>
     <header></header>
@@ -82,52 +97,41 @@
 
     <div id="myContainer">
       <div class="ms-left">
-        <div class="ms-section" id="left1">
+        <div class="ms-section"  id="left1" data-position="1">
             <h1>TasteTest</h1>
           <h2>Coming Soon!</h2>
           <p>
-            Ever how much work goes into the seasonal menus of NYC's top restuarant? Curious for a taste of the process?</p>
+            Ever wonder how much work goes into the seasonal menus of NYC's top restuarants? Curious for a taste of the process?</p>
             
-          <p>Now with TasteTest, you can have a seat at the table. Join NYC's greatest chefs as a taster of thier up and coming seasonal menus.</p>
-        
-          <!-- <p class="restaurants">
-              Some of our partner restaurants include:
-             <li>Eleven Madison Park</li>
-             <li>Le Bernadin</li>
-             <li>Per Se</li>
-             <li>Chef's Table at Brooklyn Fare</li>
-             <li>And more to come...</li>
-            </p> -->
+          <p>Now with TasteTest, you're invited to preview some of NYC's top restaurant menus alongside the chefs who create them. Join NYC's greatest chefs as they test their up and coming seasonal menus.</p>
         </div>
 
-        <div class="ms-section" id="left2">
+        <div class="ms-section"  id="left2" data-position="4">
     
         </div>
 
-        <div class="ms-section" id="left3">
+        <div class="ms-section" id="left3" data-position="5" >
           <div class="container">
-  
-            <h2>Signup to get notified when we launch!<small></h2>
-            
-            <form id="frm1" >
+            <h2>Signup to get notified when we launch!<small></h2>      
+         <form id="frm1" method="POST" action="https://formspree.io/efgodward@gmail.com" > 
   
               <div class="group">      
-                <input type="text" required id='name'>
+                <input type="text" required id='name' autocomplete="off">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Name</label>
               </div>
                 
               <div class="group">      
-                <input type="email" required>
+                <input type="email" required id='email' autocomplete="off" >
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Email</label>
               </div>
 
-            <button type="submit" onclick="myFunction()" value="Submit" > Submit </button>
-    
+            <button type="button" id="submitButton" value="Submit" > Submit </button>
             </form>
+         
           </div>
 
           </div>
@@ -135,9 +139,10 @@
       </div>
 
       <div class="ms-right">
-        <div class="ms-section" id="right1">
-      <h2 class="partner">Our Restaurants</h2>
+        <div class="ms-section"  id="right1" data-position="2">
+    
           <div class="restaurant-logos">
+              <p class="partner">Our Partner Restaurants:</p>
             <a href="https://www.elevenmadisonpark.com/" class="elevenmad">
               <img src="11madpark logo.png" alt="Eleven Madison Park" />
             </a>
@@ -153,20 +158,20 @@
           </div>
         </div>
 
-        <div class="ms-section" id="right2">
-          <h2>We welcome you to a seat at previously never-offered tables...</h2>
+        <div class="ms-section"  id="right2" data-position="3">
+          <h2>We welcome you to a taste of NYC's most exclusive menus...</h2>
           
           <p class="simple">
-          TasteTest brings you a behind the scenes look at the creative efforts that go into some of New York's most inventive restaurants. You're only a few clicks away from being part of an exclusive tasting experience.
+          TasteTest brings you a behind the scenes look at the creative efforts that go into some of New York's most inventive restaurants. You're only a few clicks away from being part of a unique tasting experience.
         </p>
 
         <p class="simple">
-            Joining is easy. Simply create an account, rank your top three restaurants, and we'll notify you when it's chefs need additional palates to test their newest creations. 
+            We're launching soon and once we do, joining will be a breeze. Simply create an account, rank your top three restaurants, and we'll notify you when chefs need fresh opinions on their latest seasonal creations.  
           </p>
         </div>
 
-        <div class="ms-section" id="right3">
-          <h3 class="location">Proudly based in NYC - Visit us at 902 Broadway, New York, NY 10010</h3>
+        <div class="ms-section"  id="right3" data-position="6">
+          <h3 class="location">Proudly based in NYC</h3>
           <div id="map"></div>
           
             <div class="bottom">
@@ -183,4 +188,3 @@
   </body>
 </html>
 
-<!-- method="POST" action="https://formspree.io/efgodward@gmail.com">  -->

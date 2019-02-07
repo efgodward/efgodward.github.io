@@ -1,3 +1,5 @@
+/* //event listerer */
+
 html, body {
     margin: 25px;
     padding: 25px;
@@ -11,15 +13,13 @@ html, body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
-
 h1 {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 40px;
     color: white;
     margin: 25px;
-   text-decoration: overline;
-   text-decoration-color: maroon;
+    text-decoration: overline;
+    text-decoration-color: maroon;
 }
 
 h2 {
@@ -50,64 +50,56 @@ p {
 }
 
 #left2 {
-    background-image: url("TasteTest/11maddish.jpg"); 
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url("TasteTest/11maddish.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #right1 {
-    background-image: url("persedish large.jpg"); 
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url("persedish large.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
 a, img {
-    width: 125px;
+    width: 140px;
     padding: 15px;
 }
 
-.partners {
-    margin: 25px;
+.partner {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px;
+    color: #3E3637;
 }
+
 .restaurant-logos {
     position: absolute;
     vertical-align: middle;
     padding: 25px;
     margin: 25px;
-}
-
-.restaurants {
-    display: none;
-}
-
-@media (max-width: 450px) {
-    #right1{
-        display: none;
-    }
-    .restaurants {
-        display: show;
-    }
+    background: rgba(255, 255, 255, 0.6);
 }
 
 #left2 {
-    background-image: url("TasteTest/11maddish.jpg"); 
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url("TasteTest/11maddish.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #left3 {
-    background-image: url("blankwhitebackground.jpg"); 
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url("blankwhitebackground.jpg");
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button {
@@ -153,6 +145,7 @@ button:hover {
     width: 100%;
     height: 100%;
 }
+
 .ms-easing {
     -webkit-transition: all 0.7s ease-out;
     -moz-transition: all 0.7s ease-out;
@@ -161,7 +154,7 @@ button:hover {
 }
 
 .multiscroll-tooltip {
-    position: absolute;
+    position: relative;
     color: #fff;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
@@ -217,7 +210,7 @@ button:hover {
 }
 
 #menu li.active {
-    background: rgba(198,61,15, .3);
+    background: rgba(198, 61, 15, .3);
     color: #000;
 }
 
@@ -229,32 +222,24 @@ button:hover {
 }
 
 #menu li:hover {
-    background: rgb(198,61,15,.8);
+    background: rgb(198, 61, 15, .8);
     color: white;
     transition: all 0.2s ease 0s;
 }
 
 #map {
-    width: 450px;
+    width: 400px;
     height: 300px;
 }
 
 @media (max-width: 800px) {
     #map {
-        width: 450px;
-        height: 300px;
-    }
-
-}
-
-@media (max-width: 550px) {
-    #map {
         display: none;
     }
-    .container {
+    /* body .container {
         width: 300px;
-        background: transparent;
-    }
+        background: whitesmoke;
+    } */
 }
 
 * {
@@ -267,7 +252,7 @@ body .container {
     font-family: 'Noto Sans JP', sans-serif;
     width: 550px;
     display: block;
-    background:  #C63D0F;
+    background: #C63D0F;
     padding: 10px 50px 50px;
 }
 
@@ -376,7 +361,7 @@ input:focus~.highlight {
 
 @keyframes inputHighlighter {
     from {
-        background:snow;
+        background: snow;
     }
     to {
         width: 0;

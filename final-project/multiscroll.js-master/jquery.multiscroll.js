@@ -7,6 +7,7 @@
  */
 
 
+
 (function($, window, document, Math, undefined) {
 
     $.fn.multiscroll = function(options) {
@@ -34,6 +35,11 @@
             'keyboardScrolling': true,
             'touchSensitivity': 5,
 
+            //responsive
+            'responsiveWidth': 900,
+            // 'responsiveExpandKey': ',
+            'responsiveExpand': true,
+
             // Custom selectors
             'sectionSelector': '.ms-section',
             'leftSelector': '.ms-left',
@@ -43,7 +49,7 @@
             'afterLoad': null,
             'onLeave': null,
             'afterRender': null,
-            'afterResize': null
+            'afterResize': null,
         }, options);
 
         //Defines the delay to take place before being able to scroll to the next section

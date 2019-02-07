@@ -1,22 +1,37 @@
-//look up services where you can submit an email form
+jQuery(document).ready(function($) {
+  $("#submitButton").click(function() {
+    var name = $.trim($("#name").val());
+    var email = $.trim($("#email").val());
 
-//collect some datat - list of restaurants: hoteltonight for restuarant reservations
-//do a sort of simulation on an iphone screen- maybe something for Eleven Madision park, normally a 1 year wait! etc..
-// document.querySelector('.submit-button').click = thankyouName;
+    if (name === "") {
+      alert("Please enter your name.");
+      return false;
+    } else if (email === "") {
+      alert("Please enter your email.");
+      return false;
+    }
+    //need to put something for both name and email missing but was getting syntax errors
+    else if (name != "") {
+      $("input")
+        .val("")
+        .removeAttr("name");
+    } else if (email != "") {
+      $("input")
+        .val("")
+        .removeAttr("email");
+    }
+  });
+});
 
-// function thankyouName () {
-//     let name = document.querySelector('name').value;
+var resizeId;
+$(window).resize(function() {
+  clearTimeout(resizeId);
+  resizeId = setTimeout(doneResizing, 500);
+});
 
-//     let solution = (`Thanks! We'll be in touch, ${name}!`);
-
-//     document.querySelector(h3).innerHTML = solution;
-// }
-
-
-// function myFunction() {
-//     document.getElementById("frm1").submit();
-//   }
-
-// $("#frm1" ).click(function() {
-//     alert( "Thank you!");
-//   });
+function doneResizing() {
+  if ($(window).width() < 800) {
+    alert("I am shrinking!");
+    return false;
+  }
+}
